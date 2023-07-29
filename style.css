@@ -1,4 +1,3 @@
-
 div#videoContainer {
     display: flex;
     flex-direction: column;
@@ -6,7 +5,7 @@ div#videoContainer {
     align-items: center;
 }
 
-form#status{
+form#status {
     direction: rtl;
     display: flex;
     align-items: center;
@@ -15,38 +14,68 @@ form#status{
     margin-top: 3rem;
 }
 
-form#status span{
+form#status span {
     margin-left: 0.5rem;
 }
 
-form#status label{
+form#status label {
     vertical-align: middle;
     margin-left: 0.5rem;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-form#status input{
+form#status input {
     vertical-align: top;
     margin-left: 0;
 }
 
-form#poll{
+form#poll {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     visibility: hidden;
 }
 
-p#q{
+p#q {
     direction: rtl;
     text-align: center;
 }
 
-div.pollAnswers{
+div.pollAnswers {
     direction: rtl;
     display: flex;
     width: 320px;
     justify-content: space-between;
+}
+
+div#bar {
+    position: relative;
+    height: 15px;
+    border: 1px solid #c07777;
+    width: 320px;
+    border-radius: 50px;
+    padding: 0;
+    overflow: hidden;
+    display: none;
+}
+
+div#progressBar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #c49b66;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+span#timer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

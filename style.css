@@ -1,4 +1,52 @@
-video {
-    display: block;
+
+div#videoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form#status{
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    width: 320px;
     margin: 0 auto;
+    margin-top: 3rem;
+}
+
+form#status span{
+    margin-left: 0.5rem;
+}
+
+form#status label{
+    vertical-align: middle;
+    margin-left: 0.5rem;
+}
+
+button{
+    cursor: pointer;
+}
+
+form#status input{
+    vertical-align: top;
+    margin-left: 0;
+}
+
+form#poll{
+    display: flex;
+    flex-direction:column;
+    visibility: hidden;
+}
+
+p#q{
+    direction: rtl;
+    text-align: center;
+}
+
+div.pollAnswers{
+    direction: rtl;
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
 }
